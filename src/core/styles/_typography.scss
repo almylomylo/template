@@ -1,0 +1,48 @@
+@font-face {
+  font-family: 'Century-Gothic';
+  src: url('../assets/fonts/Century Gothic.ttf') format('truetype');
+}
+* {
+  font-family: $default-font;
+}
+strong {
+  font-weight: $font-bold;
+}
+
+em {
+  font-style: italic;
+}
+
+.fs-12 {
+  font-size: 0.75rem;
+}
+.fs-14 {
+  font-size: 0.875rem;
+}
+.fs-16 {
+  font-size: 16px;
+}
+.fs-20 {
+  font-size: 20px;
+}
+.fs-24 {
+  font-size: 24px;
+}
+.fs-28 {
+  font-size: 28px;
+}
+.fs-32 {
+  font-size: 32px;
+}
+.fs-48 {
+  font-size: 48px;
+}
+.fs-64 {
+  font-size: 64px;
+}
+.fc-white {
+  color: $white;
+}
+.cap {
+  text-transform: uppercase;
+}

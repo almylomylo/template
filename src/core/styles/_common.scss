@@ -1,0 +1,22 @@
+body {
+  overscroll-behavior-y: none;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+#root {
+  overflow-x: hidden;
+  display: grid;
+  width: 100vw;
+  min-height: 100vh;
+  height: 100%;
+}
+.svg-defs {
+  display: none;
+}
+.container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  max-width: $max-content-width;
+  margin: 0 auto;
+}

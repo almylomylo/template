@@ -1,0 +1,21 @@
+.topNav {
+  background-color: $purple;
+  padding: 0.5rem;
+
+  &-inner {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+  }
+  &-left,
+  &-right {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+  }
+  &-center {
+    display: flex;
+    justify-content: center;
+  }
+}

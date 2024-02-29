@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: inherit;
+  color: inherit;
+  outline: transparent;
+  background: transparent;
+  border-radius: 0;
+  border: 0;
+  &::before,
+  &::after {
+    box-sizing: border-box;
+  }
+}
+
+html {
+  text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  line-height: 1;
+}
+
+ol[class],
+ul[class] {
+  list-style: none;
+}
+
+img,
+svg {
+  display: block;
+}
+
+button,
+input,
+textarea,
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+button,
+input[type='submit'],
+input[type='checkbox'],
+input[type='radio'],
+select,
+label,
+a {
+  cursor: pointer;
+}
+
+button[disabled] {
+  cursor: default;
+}
+
+textarea {
+  resize: none;
+}
+
+a {
+  text-decoration: none;
+  touch-action: manipulation;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: unset;
+  -webkit-text-fill-color: unset;
+  -webkit-box-shadow: unset;
+  transition: background-color 5000s ease-in-out 0s;
+  color: unset !important;
+}

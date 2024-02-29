@@ -1,0 +1,49 @@
+.headerIcons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1.125rem;
+  &-item {
+    position: relative;
+    color: $black;
+    transition: color 0.4s $cubic-out;
+    cursor: pointer;
+    &:hover {
+      color: $purple;
+    }
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .iconMagnifier {
+    width: 1.375rem;
+    height: 1.375rem;
+  }
+  .iconUser {
+    width: 1.4375rem;
+    height: 1.5rem;
+  }
+  .iconHeart {
+    width: 1.5625rem;
+    height: 1.5rem;
+  }
+  .iconCart {
+    width: 1.5rem;
+    height: 1.5rem;
+    &-numItems {
+      position: absolute;
+      right: 0;
+      top: 0;
+      background: $purple;
+      color: $white;
+      border-radius: 100%;
+      aspect-ratio: 1;
+      transform: translate(50%, -50%);
+      min-width: 1.125rem;
+      min-height: 1.125rem;
+      display: grid;
+      place-content: center;
+    }
+  }
+}

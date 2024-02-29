@@ -1,0 +1,38 @@
+// colors
+$black: #242732;
+$black30: #24273230;
+$black: #242732;
+$white: #fff;
+$beige: #fffaf5;
+$grey: #e7e7e7;
+$light-pink: #f9cfe4;
+$purple: #d6006d;
+$purple40: #d6006f40;
+
+// base
+$root-font-size: 16px;
+$base-background-gray: #fcfcfc;
+
+// font
+$default-font: 'Century-Gothic', sans-serif;
+
+// font-weight
+$font-regular: 400;
+$font-medium: 500;
+$font-semibold: 600;
+$font-bold: 700;
+
+// breakpoints
+$breakpoint-xxsmall: 375px;
+$breakpoint-xsmall: 425px;
+$breakpoint-small: 640px;
+$breakpoint-medium: 900px;
+$breakpoint-large: 1200px;
+$breakpoint-xlarge: 1440px;
+
+$max-content-width: 1600px;
+
+$cubic-out: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+:export {
+}

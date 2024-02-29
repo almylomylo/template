@@ -1,0 +1,93 @@
+[
+  {
+    "navType": "headerNav",
+    "children": [
+      {
+        "navItem": "New collection"
+      },
+      {
+        "navItem": "Γυναικεία κοσμήματα",
+        "children": [
+          {"navItem": "All collections"},
+          {"navItem": "Κολιέ"},
+          {"navItem": "Βραχιόλια"},
+          {"navItem": "Σκουλαρίκια"},
+          {"navItem": "Δαχτυλίδια"}
+        ]
+      },
+      {
+        "navItem": "Δώρα",
+        "children": [
+          {"navItem": "All collections"},
+          {"navItem": "Έως 30€"},
+          {"navItem": "Έως 50€"},
+          {"navItem": "Έως 100€"},
+          {"navItem": "Δωροκάρτες"},
+          {"navItem": "Εταιρικά Δώρα"}
+        ]
+      },
+      {
+        "navItem": "Last chance"
+      },
+      {
+        "navItem": "Γουρια 2024"
+      },
+      {
+        "navItem": "Φτιάξε το δικό σου"
+      }
+    ]
+  },
+  {
+    "navType": "menuNav",
+    "children": [
+      {
+        "navItem": "Δώρα",
+        "children": [
+          {"navItem": "All collections"},
+          {"navItem": "Έως 30€"},
+          {"navItem": "Έως 50€"},
+          {"navItem": "Έως 100€"},
+          {"navItem": "Δωροκάρτες"},
+          {"navItem": "Εταιρικά Δώρα"}
+        ]
+      },
+      {
+        "navItem": "New collection"
+      },
+      {
+        "navItem": "Gold edition"
+      },
+      {
+        "navItem": "Γυναικεία κοσμήματα",
+        "children": [
+          {"navItem": "All collections"},
+          {"navItem": "Κολιέ"},
+          {"navItem": "Βραχιόλια"},
+          {"navItem": "Σκουλαρίκια"},
+          {"navItem": "Δαχτυλίδια"}
+        ]
+      },
+      {
+        "navItem": "Ανδρικά κοσμήματα"
+      },
+      {
+        "navItem": "Παιδικά είδη"
+      },
+      {
+        "navItem": "Συλλογές"
+      },
+      {
+        "navItem": "Φτιάξε το δικό σου"
+      },
+      {
+        "navItem": "Αξεσουάρ"
+      },
+      {
+        "navItem": "Last chance"
+      },
+      {
+        "navItem": "Γουρια 2024"
+      }
+    ]
+  }
+]
