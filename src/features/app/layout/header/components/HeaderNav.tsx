@@ -1,9 +1,9 @@
 import $appStore from '@/core/store/app/store';
 import {useUnit} from 'effector-react';
 import {MenuType, NavItemType} from '@/core/store/app/types';
-import './HeaderNav.scss';
 import {sanitizeUppercase} from '@/core/utils/stringUtils';
 
+import './HeaderNav.scss';
 export const HeaderNav = () => {
   const appStore = useUnit($appStore);
   return (

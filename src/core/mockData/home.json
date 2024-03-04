@@ -1,0 +1,404 @@
+{
+  "is_front": true,
+  "title": "Homepage",
+  "image": null,
+  "body": null,
+  "sections": [
+    {
+      "type": "hero_banner",
+      "data": {
+        "title": null,
+        "subtitle": null,
+        "image": "https://backend.annamariamazaraki.gr/sites/default/files/2024-02/SALE-FEBRUARY1.gif",
+        "mobile_image": "https://backend.annamariamazaraki.gr/sites/default/files/2024-02/SALE-FEBRUARY-MOB.gif",
+        "cta": {}
+      }
+    },
+    {
+      "type": "marquee",
+      "data": {
+        "title": "anna maria mazaraki"
+      }
+    },
+    {
+      "type": "content_grid",
+      "layout": null,
+      "data": {
+        "content": [
+          {
+            "type": "content_grid_details",
+            "data": {
+              "title": null,
+              "subtitle": "Μαργαριτάρια",
+              "image": "https://backend.annamariamazaraki.gr/sites/default/files/2024-02/story-monograms1.jpg",
+              "cta": {
+                "title": "",
+                "url": "/el/margaritaria"
+              }
+            }
+          },
+          {
+            "type": "content_grid_details",
+            "data": {
+              "title": null,
+              "subtitle": "Μονογράμματα",
+              "image": "https://backend.annamariamazaraki.gr/sites/default/files/2024-02/story-monograms1.jpg",
+              "cta": {
+                "title": "",
+                "url": "/el/kolie-monogramma"
+              }
+            }
+          },
+          {
+            "type": "content_grid_details",
+            "data": {
+              "title": null,
+              "subtitle": "Γυναικεία Σκουλαρίκια",
+              "image": "https://backend.annamariamazaraki.gr/sites/default/files/2024-02/drops.jpg",
+              "cta": {
+                "title": "",
+                "url": "/el/earrings"
+              }
+            }
+          },
+          {
+            "type": "content_grid_details",
+            "data": {
+              "title": null,
+              "subtitle": "Bags Collection",
+              "image": "https://backend.annamariamazaraki.gr/sites/default/files/2024-02/POST%20PINK%20BAGS%204.jpg",
+              "cta": {
+                "title": "",
+                "url": "/el/accessories/bags-wallets"
+              }
+            }
+          },
+          {
+            "type": "content_grid_details",
+            "data": {
+              "title": null,
+              "subtitle": "Μονογράμματα",
+              "image": "https://backend.annamariamazaraki.gr/sites/default/files/2024-02/story-monograms1.jpg",
+              "cta": {
+                "title": "",
+                "url": "/el/kolie-monogramma"
+              }
+            }
+          },
+          {
+            "type": "content_grid_details",
+            "data": {
+              "title": null,
+              "subtitle": "Μονογράμματα",
+              "image": "https://backend.annamariamazaraki.gr/sites/default/files/2024-02/story-monograms1.jpg",
+              "cta": {
+                "title": "",
+                "url": "/el/kolie-monogramma"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "price_tab",
+      "data": {
+        "label": "Δώρα",
+        "title_link": "/el/gift-ideas",
+        "sections": [
+          {
+            "type": "price_tab_list",
+            "data": {}
+          },
+          {
+            "type": "price_tab_list",
+            "data": {
+              "label": "Δώρα έως 50€",
+              "products": []
+            }
+          },
+          {
+            "type": "price_tab_list",
+            "data": {
+              "label": "Δώρα έως 100€",
+              "products": [
+                {
+                  "product_id": 17837,
+                  "title": "Κολιέ ασήμι 925, κίτρινο επιχρύσωμα 24Κ, κύκλος με λευκά ζιργκόν.",
+                  "path": "/el/gynaikeia-kolie/kolie-asimi-925-kitrino-epihrysoma-24k-kyklos-me-leyka-zirgkon-1",
+                  "url": "/gynaikeia-kolie/kolie-asimi-925-kitrino-epihrysoma-24k-kyklos-me-leyka-zirgkon-1",
+                  "cleanUrl": "/gynaikeia-kolie/kolie-asimi-925-kitrino-epihrysoma-24k-kyklos-me-leyka-zirgkon-1",
+                  "default_variation": {
+                    "name": "none",
+                    "id": 18831,
+                    "sku": "1SNE018012",
+                    "currency": "EUR",
+                    "list_number": null,
+                    "number": 69,
+                    "list_price": null,
+                    "price": "69,00 €",
+                    "discount_percentage": null,
+                    "stock_level": 12,
+                    "status": true
+                  },
+                  "mastersku": "1SNE018012",
+                  "category": "ΚΟΛΙΕ",
+                  "tags": [],
+                  "list_price": null,
+                  "list_price_formatted": null,
+                  "price": 69,
+                  "price_formatted": "69,00 €",
+                  "discount_percentage": null,
+                  "image": "https://backend.annamariamazaraki.gr/sites/default/files/styles/product_teaser/public/imgs/1SNE018012_1.jpg?itok=RbqfZyo5",
+                  "image_worn": "https://backend.annamariamazaraki.gr/sites/default/files/styles/product_teaser/public/2023-11/1SNE018012_9.jpg?itok=vcB0PM46"
+                },
+                {
+                  "product_id": 17865,
+                  "title": "Κολιέ ορείχαλκος, κίτρινο επιχρύσωμα 24Κ, μπίλιες.",
+                  "path": "/el/gynaikeia-kolie/kolie-oreihalkos-kitrino-epihrysoma-24k-mpilies-0",
+                  "url": "/gynaikeia-kolie/kolie-oreihalkos-kitrino-epihrysoma-24k-mpilies-0",
+                  "cleanUrl": "/gynaikeia-kolie/kolie-oreihalkos-kitrino-epihrysoma-24k-mpilies-0",
+                  "default_variation": {
+                    "name": "none",
+                    "id": 18863,
+                    "sku": "1MNE004562",
+                    "currency": "EUR",
+                    "list_number": null,
+                    "number": 99,
+                    "list_price": null,
+                    "price": "99,00 €",
+                    "discount_percentage": null,
+                    "stock_level": 15,
+                    "status": true
+                  },
+                  "mastersku": "1MNE004562",
+                  "category": "ΚΟΛΙΕ",
+                  "tags": [],
+                  "list_price": null,
+                  "list_price_formatted": null,
+                  "price": 99,
+                  "price_formatted": "99,00 €",
+                  "discount_percentage": null,
+                  "image": "https://backend.annamariamazaraki.gr/sites/default/files/styles/product_teaser/public/imgs/1MNE004562_1.jpg?itok=GU9IK6Uj",
+                  "image_worn": "https://backend.annamariamazaraki.gr/sites/default/files/styles/product_teaser/public/imgs/1MNE004562_9.jpg?itok=3VH9AsfX"
+                },
+                {
+                  "product_id": 17633,
+                  "title": "Κολιέ ορείχαλκος, κίτρινο επιχρύσωμα 24Κ, μαργαριτάρια και λευκά ζιργκόν.",
+                  "path": "/el/gynaikeia-kolie/kolie-oreihalkos-kitrino-epihrysoma-24k-margaritaria-kai-leyka-zirgkon-0",
+                  "url": "/gynaikeia-kolie/kolie-oreihalkos-kitrino-epihrysoma-24k-margaritaria-kai-leyka-zirgkon-0",
+                  "cleanUrl": "/gynaikeia-kolie/kolie-oreihalkos-kitrino-epihrysoma-24k-margaritaria-kai-leyka-zirgkon-0",
+                  "default_variation": {
+                    "name": "none",
+                    "id": 18488,
+                    "sku": "1MNE004620",
+                    "currency": "EUR",
+                    "list_number": null,
+                    "number": 79,
+                    "list_price": null,
+                    "price": "79,00 €",
+                    "discount_percentage": null,
+                    "stock_level": 40,
+                    "status": true
+                  },
+                  "mastersku": "1MNE004620",
+                  "category": "ΚΟΛΙΕ",
+                  "tags": [],
+                  "list_price": null,
+                  "list_price_formatted": null,
+                  "price": 79,
+                  "price_formatted": "79,00 €",
+                  "discount_percentage": null,
+                  "image": "https://backend.annamariamazaraki.gr/sites/default/files/styles/product_teaser/public/2023-09/1MNE004620_1.jpg?itok=yjQK85hG",
+                  "image_worn": "https://backend.annamariamazaraki.gr/sites/default/files/styles/product_teaser/public/imgs/1MNE004620_9.jpg?itok=az4qyRR8"
+                },
+                {
+                  "product_id": 17507,
+                  "title": "Τσάντα χιαστί, μεταλλικό μαύρο σουέτ δέρμα με μάτι από σμάλτο. Διαστάσεις 21x20εκ.",
+                  "path": "/el/axesoyar/tsanta-hiasti-metalliko-mayro-soyet-derma-me-mati-apo-smalto-diastaseis-21x20ek",
+                  "url": "/axesoyar/tsanta-hiasti-metalliko-mayro-soyet-derma-me-mati-apo-smalto-diastaseis-21x20ek",
+                  "cleanUrl": "/axesoyar/tsanta-hiasti-metalliko-mayro-soyet-derma-me-mati-apo-smalto-diastaseis-21x20ek",
+                  "default_variation": {
+                    "name": "none",
+                    "id": 18342,
+                    "sku": "1OHA000630",
+                    "currency": "EUR",
+                    "list_number": null,
+                    "number": 79,
+                    "list_price": null,
+                    "price": "79,00 €",
+                    "discount_percentage": null,
+                    "stock_level": 16,
+                    "status": true
+                  },
+                  "mastersku": "1OHA000630",
+                  "category": "ΑΞΕΣΟΥΑΡ",
+                  "tags": [],
+                  "list_price": null,
+                  "list_price_formatted": null,
+                  "price": 79,
+                  "price_formatted": "79,00 €",
+                  "discount_percentage": null,
+                  "image": "https://backend.annamariamazaraki.gr/sites/default/files/styles/product_teaser/public/imgs/1OHA000630_1.jpg?itok=fIfnYo7E",
+                  "image_worn": "https://backend.annamariamazaraki.gr/sites/default/files/styles/product_teaser/public/2023-09/1OHA000630_9.jpg?itok=Ix7tpLu6"
+                },
+                {
+                  "product_id": 16485,
+                  "title": "Κολιέ-ροζάριο λευκός επιροδιωμένος ορείχαλκος, μαύρος όνυχας.",
+                  "path": "/el/gynaikeia-kolie/kolie-rozario-leykos-epirodiomenos-oreihalkos-mayros-onyhas-1",
+                  "url": "/gynaikeia-kolie/kolie-rozario-leykos-epirodiomenos-oreihalkos-mayros-onyhas-1",
+                  "cleanUrl": "/gynaikeia-kolie/kolie-rozario-leykos-epirodiomenos-oreihalkos-mayros-onyhas-1",
+                  "default_variation": {
+                    "name": "none",
+                    "id": 17158,
+                    "sku": "1MNE000978",
+                    "currency": "EUR",
+                    "list_number": null,
+                    "number": 79,
+                    "list_price": null,
+                    "price": "79,00 €",
+                    "discount_percentage": null,
+                    "stock_level": 25,
+                    "status": true
+                  },
+                  "mastersku": "1MNE000978",
+                  "category": "ΚΟΛΙΕ",
+                  "tags": [],
+                  "list_price": null,
+                  "list_price_formatted": null,
+                  "price": 79,
+                  "price_formatted": "79,00 €",
+                  "discount_percentage": null,
+                  "image": "https://backend.annamariamazaraki.gr/sites/default/files/styles/product_teaser/public/2023-03/1MNE000978_1.jpg?itok=GpAIgluN",
+                  "image_worn": "https://backend.annamariamazaraki.gr/sites/default/files/styles/product_teaser/public/imgs/1MNE000978_9.jpg?itok=YnuOMppM"
+                },
+                {
+                  "product_id": 16182,
+                  "title": "Βραχιόλι ασήμι 925, κίτρινο επιχρύσωμα 24Κ, οβάλ με λευκά ζιργκόν.",
+                  "path": "/el/gynaikeia-brahiolia/brahioli-asimi-925-kitrino-epihrysoma-24k-obal-me-leyka-zirgkon",
+                  "url": "/gynaikeia-brahiolia/brahioli-asimi-925-kitrino-epihrysoma-24k-obal-me-leyka-zirgkon",
+                  "cleanUrl": "/gynaikeia-brahiolia/brahioli-asimi-925-kitrino-epihrysoma-24k-obal-me-leyka-zirgkon",
+                  "default_variation": {
+                    "name": "none",
+                    "id": 16818,
+                    "sku": "1SBR012122",
+                    "currency": "EUR",
+                    "list_number": 89,
+                    "number": 71.2,
+                    "list_price": "89,00 €",
+                    "price": "71,20 €",
+                    "discount_percentage": "-20%",
+                    "stock_level": 21,
+                    "status": true
+                  },
+                  "mastersku": "1SBR012122",
+                  "category": "ΒΡΑΧΙΟΛΙ",
+                  "tags": [],
+                  "list_price": 89,
+                  "list_price_formatted": "89,00 €",
+                  "price": 71.2,
+                  "price_formatted": "71,20 €",
+                  "discount_percentage": "-20%",
+                  "image": "https://backend.annamariamazaraki.gr/sites/default/files/styles/product_teaser/public/2023-01/1SBR012122_1_1.jpg?itok=pSkbuv1_",
+                  "image_worn": "https://backend.annamariamazaraki.gr/sites/default/files/styles/product_teaser/public/imgs/1SBR012122_9.jpg?itok=XcDNpbnH"
+                },
+                {
+                  "product_id": 17058,
+                  "title": "Κολιέ κορδόνι με χρυσές και λευκές ημιπ. πέτρες.",
+                  "path": "/el/gynaikeia-kolie/kolie-kordoni-me-hryses-kai-leykes-imip-petres",
+                  "url": "/gynaikeia-kolie/kolie-kordoni-me-hryses-kai-leykes-imip-petres",
+                  "cleanUrl": "/gynaikeia-kolie/kolie-kordoni-me-hryses-kai-leykes-imip-petres",
+                  "default_variation": {
+                    "name": "none",
+                    "id": 17795,
+                    "sku": "1ONE000756",
+                    "currency": "EUR",
+                    "list_number": null,
+                    "number": 89,
+                    "list_price": null,
+                    "price": "89,00 €",
+                    "discount_percentage": null,
+                    "stock_level": 59,
+                    "status": true
+                  },
+                  "mastersku": "1ONE000756",
+                  "category": "ΚΟΛΙΕ",
+                  "tags": [],
+                  "list_price": null,
+                  "list_price_formatted": null,
+                  "price": 89,
+                  "price_formatted": "89,00 €",
+                  "discount_percentage": null,
+                  "image": "https://backend.annamariamazaraki.gr/sites/default/files/styles/product_teaser/public/imgs/1ONE000756_1.jpg?itok=MIDqWWcr",
+                  "image_worn": "https://backend.annamariamazaraki.gr/sites/default/files/styles/product_teaser/public/2023-05/1ONE000756_9.jpg?itok=OdmBGwYn"
+                },
+                {
+                  "product_id": 16421,
+                  "title": "Σκουλαρίκια κίτρινο χρυσό Κ9, κύκλος και αλυσίδα.",
+                  "path": "/el/gold-edition/skoylarikia-kitrino-hryso-k9-kyklos-kai-alysida",
+                  "url": "/gold-edition/skoylarikia-kitrino-hryso-k9-kyklos-kai-alysida",
+                  "cleanUrl": "/gold-edition/skoylarikia-kitrino-hryso-k9-kyklos-kai-alysida",
+                  "default_variation": {
+                    "name": "none",
+                    "id": 17085,
+                    "sku": "1GEA001473",
+                    "currency": "EUR",
+                    "list_number": null,
+                    "number": 109,
+                    "list_price": null,
+                    "price": "109,00 €",
+                    "discount_percentage": null,
+                    "stock_level": 14,
+                    "status": true
+                  },
+                  "mastersku": "1GEA001473",
+                  "category": "ΣΚΟΥΛΑΡΙΚΙ",
+                  "tags": [],
+                  "list_price": null,
+                  "list_price_formatted": null,
+                  "price": 109,
+                  "price_formatted": "109,00 €",
+                  "discount_percentage": null,
+                  "image": "https://backend.annamariamazaraki.gr/sites/default/files/styles/product_teaser/public/imgs/1GEA001473_1.jpg?itok=fVI1EBt7",
+                  "image_worn": "https://backend.annamariamazaraki.gr/sites/default/files/styles/product_teaser/public/imgs/1GEA001473_9.jpg?itok=UbHQpJ6l"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "banner_text",
+      "data": {
+        "title": "Express Delivery",
+        "subtitle": "Παράδοση την ίδια μέρα με αυτή της παραγγελίας",
+        "image": [],
+        "cta": {
+          "title": "Ανακαλύψτε Εδώ",
+          "url": "/el/expressdelivery"
+        }
+      }
+    },
+    {
+      "type": "banner_text",
+      "data": {
+        "title": "Τάσεις, celebrities, tips και άλλα πολλά νέα!",
+        "subtitle": "AMM Βlog",
+        "image": [{}],
+        "cta": {}
+      }
+    }
+  ],
+  "metaTags": {
+    "description": "Το κόσμημα είναι το πάθος μας! Μοναδικά κοσμήματα σε χρυσό Κ9, Κ14 ή Κ18, ασήμι ή μεταλλό σε υπέροχα χρώματα και σχέδια. Ανακαλύψτε τη νέα μας συλλογή online με δωρεάν μεταφορικά για αγορές άνω...",
+    "title": "Κοσμήματα Γυναικεία I Anna Maria Mazaraki",
+    "canonical_url": "https://annamariamazaraki.gr",
+    "content_language": "el",
+    "shortlink": "https://annamariamazaraki.gr",
+    "og:title": "Homepage",
+    "og:description": "",
+    "og:site_name": "Anna Maria Mazaraki",
+    "og:url": "https://annamariamazaraki.gr"
+  }
+}

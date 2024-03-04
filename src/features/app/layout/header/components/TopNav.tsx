@@ -9,7 +9,7 @@ export const TopNav = () => {
           <div className="topNav-left-nav-item">Καταστηματα</div>
         </nav>
         <div className="topNav-center">
-          <div className="marquee">
+          <div className="topNav-marquee">
             - 20% ΕΚΠΤΩΣΗ ΣΕ ΟΛΑ ΤΑ ΒΡΑΧΙΟΛΙΑ ΚΑΙ ΔΑΧΤΥΛΙΔΙΑ, ΕΞΑΙΡΕΙΤΑΙ Η ΝΕΑ ΚΑΙ ΧΡΥΣΗ ΣΥΛΛΟΓΗ ΚΑΙ ΤΑ ΕΙΔΗ LAST
             CHANCE.
           </div>

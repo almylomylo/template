@@ -3,4 +3,11 @@
   align-items: center;
   justify-content: center;
   gap: 1.125rem;
+  .navItem {
+    cursor: pointer;
+    transition: color 0.3s $cubic-out;
+    &:hover {
+      color: $purple;
+    }
+  }
 }

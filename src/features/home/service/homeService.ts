@@ -1,28 +1,23 @@
+import {AxiosError} from 'axios';
 import apiClient from '../../../core/api/apiClient';
 import {API_ENDPOINTS} from '../../../core/constants/apiEndpoints';
-import {UserModel} from '../models/homeModel';
-
-// const getUsers = async () => {
-//   return await apiClient({
-//     url: API_ENDPOINTS.USERS,
-//     method: 'GET',
-//   });
-// };
-
-const getUsers = async (): Promise<UserModel[] | null> => {
+import {HomePageType} from '../models/homeModel';
+import homeData from '@/core/mockData/home.json';
+const getHome = async (): Promise<HomePageType> => {
   const response = await apiClient({
-    url: API_ENDPOINTS.USERS,
+    url: API_ENDPOINTS.HOME,
     method: 'GET',
   });
-  if (response.ok) {
-    throw new Error('Failed to get all users');
+  if (response.status === 404) {
+    return homeData;
   }
   const data = await response;
   return data;
 };
 
 const HomeService = {
-  getUsers,
+  getHome,
+  homeData,
 };
 
 export default HomeService;

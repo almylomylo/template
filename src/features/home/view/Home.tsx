@@ -1,38 +1,22 @@
 import {HomeViewModel} from '@/features/home/viewmodel/homeViewModel';
-import {UserModel} from '@/features/home/models/homeModel';
-
+import {SectionType} from '../models/homeModel';
+import {Suspense} from 'react';
+import {Loader} from '@/core/components/loader/Loader';
 const HomeView = () => {
-  // const [users, setUsers] = useState<UserModel[] | null>(null);
-  // const [isLoading, setIsLoading] = useState<boolean>(false);
-  const {users} = HomeViewModel();
-  // useEffect(() => {
-  //   const a = async () => {
-  //     setIsLoading(true);
-  //     await HomeViewModel()
-  //       .getUserList()
-  //       .then((data: UserModel[] | undefined) => {
-  //         if (data) {
-  //           setUsers(data);
-  //           setIsLoading(false);
-  //         }
-  //       });
-  //   };
-  //   if (users === null) a();
-  // }, [users]);
+  const {homeData, isLoading, mockData, getModule} = HomeViewModel();
 
   return (
-    <div>
-      {/* {isLoading && <>Loading...</>} */}
-      {/* {users != null && (
-        <div className="container">
-          {users.slice(0, 100).map((user: UserModel) => (
-            <div key={user.id}>
-              {user.first_name} {user.last_name} - {user.email}
-            </div>
+    <div className="home">
+      {isLoading && <>Loading...</>}
+      {mockData != null && mockData.sections && mockData.sections!.length > 0 && (
+        <>
+          {mockData.sections.map((section: SectionType, index: number) => (
+            <Suspense fallback={<Loader isComponentLoader />} key={index}>
+              {getModule(section.type!, section)}
+            </Suspense>
           ))}
-        </div>
-      )} */}
-      Home
+        </>
+      )}
     </div>
   );
 };

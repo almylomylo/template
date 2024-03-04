@@ -1,21 +1,39 @@
 // import {useEffect, useState} from 'react';
-import {useCallback, useEffect, useState} from 'react';
-import {UserModel} from '../models/homeModel';
+import {lazy, useCallback, useEffect, useState} from 'react';
+import {HomePageType, SectionType} from '../models/homeModel';
 import HomeService from '../service/homeService';
-
+import mockData from '@/core/mockData/home.json';
+// import {BannerText, HeroBanner, ContentGrid, PriceTab} from '@/core/components';
+import {modules} from '@/core/constants/modules';
 export const HomeViewModel = () => {
-  const [users, setUsers] = useState<UserModel[] | null>();
+  const [homeData, setHomeData] = useState<HomePageType>();
+  const [isLoading, setIsLoading] = useState<boolean>(false);
   useEffect(() => {
-    getUsers();
+    // getHome();
   }, []);
 
-  const getUsers = useCallback(async () => {
-    const usersList = await HomeService.getUsers();
-    if (usersList) setUsers(usersList);
+  const getHome = useCallback(async () => {
+    setIsLoading(true);
+    const usersList = await HomeService.getHome();
+    if (usersList) {
+      setHomeData(usersList);
+      setIsLoading(false);
+    }
   }, []);
+
+  const getModule = (type: string, section: SectionType) => {
+    const mod = modules.filter((item) => item.type === type);
+    if (mod && mod.length > 0) {
+      const Component = lazy(() => import(mod[0].component));
+      return <Component section={section} />;
+    }
+  };
 
   return {
-    getUsers,
-    users,
+    getHome,
+    homeData,
+    isLoading,
+    mockData,
+    getModule,
   };
 };
