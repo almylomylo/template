@@ -9,6 +9,7 @@
   background-color: $purple40;
   transform: translateX(-100vw);
   transition: opacity 0.6s $cubic-out, transform 0s $cubic-out 0.6s;
+
   &.navIsOpen {
     opacity: 1;
     transform: translateX(0);
@@ -16,36 +17,59 @@
 
     .mainMenu-inner {
       transform: translateX(0);
-      opacity: 1;
-      transition: transform 0.6s $cubic-out, opacity 0.2s $cubic-out;
+      transition: transform 0.6s $cubic-out;
     }
   }
-  .container {
-    overflow: hidden;
-    position: relative;
-    min-height: 20rem;
-    height: 100%;
-  }
+
   &-inner {
     position: absolute;
     left: 0rem;
-    top: 2.6rem;
+    top: 0;
+    bottom: 0;
     max-width: 30rem;
     width: 100%;
     background-color: $white;
     box-shadow: 3px 2px 7px 0px rgba(0, 0, 0, 0.03);
-    opacity: 0;
-    transform: translateX(calc(-100% - 2rem));
-    transition: transform 0.6s $cubic-out, opacity 0.3s $cubic-out;
+    transform: translateX(-100%);
+    transition: transform 0.6s $cubic-out;
   }
   &-header {
     padding: 1.532rem 2rem;
     border-bottom: 1px solid $black30;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-close {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 1.4375rem;
+    height: 1.4375rem;
+    cursor: pointer;
+    &::after,
+    &::before {
+      content: '';
+      width: 1px;
+      height: 2rem;
+      background-color: $black;
+      transform-origin: center;
+      width: 1px;
+      height: 2rem;
+    }
+    &::before {
+      transform: rotate(45deg);
+    }
+    &::after {
+      transform: rotate(-45deg);
+    }
   }
   &-body {
     padding: 4rem 2rem;
     display: grid;
-    max-height: 40rem;
+    max-height: 50vh;
+    min-height: 30rem;
     height: 100%;
     overflow-y: auto;
     nav {
@@ -57,24 +81,27 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        transition: color 0.4s $cubic-out;
         cursor: pointer;
-        &::after {
-          content: '';
-          position: absolute;
-          bottom: -0.7rem;
-          background-color: $white;
-          width: 100%;
-          height: 1px;
-          transform: scaleX(0);
-          transform-origin: left;
-          transition: transform 0.6s $cubic-out;
-        }
+        // &::after {
+        //   content: '';
+        //   position: absolute;
+        //   bottom: -0.7rem;
+        //   background-color: $white;
+        //   width: 100%;
+        //   height: 1px;
+        //   transform: scaleX(0);
+        //   transform-origin: left;
+        //   transition: transform 0.6s $cubic-out;
+        // }
         &:hover {
-          &::after {
-            transform: scaleX(100%);
-            background-color: $black;
-          }
+          // &::after {
+          //   transform: scaleX(100%);
+          //   background-color: $purple;
+          // }
+          color: $purple;
           .iconArrow {
+            color: $purple;
             transform: rotate(45deg);
           }
         }
@@ -82,7 +109,7 @@
           width: 1.5rem;
           height: 1.5rem;
           color: $black;
-          transition: transform 0.4s $cubic-out;
+          transition: transform 0.4s $cubic-out, color 0.4s $cubic-out;
           svg {
             width: 100%;
             height: 100%;

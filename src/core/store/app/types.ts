@@ -1,6 +1,9 @@
+import {MainMenuItemType} from '@/features/app/model/appModels';
+
 export interface AppState {
-  nav: MenuType[] | null;
+  mainMenu: MainMenuItemType[] | null;
   error?: string | null;
+  activeNav: number | null;
 }
 
 export interface MenuType {

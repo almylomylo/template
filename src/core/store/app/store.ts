@@ -1,14 +1,27 @@
 import {AppState} from './types';
 import {AppDomain} from './domain';
 
-import {initializeApp, setError} from './events';
+import {initializeApp, setActiveNav, setError, setMainMenu} from './events';
 
 const initialState: AppState = {
-  nav: null,
+  mainMenu: null,
   error: null,
+  activeNav: null,
 };
 
 export const $appStore = AppDomain.store<AppState>(initialState)
+  .on(setActiveNav, (state, value) => {
+    return {
+      ...state,
+      activeNav: value,
+    };
+  })
+  .on(setMainMenu, (state, value) => {
+    return {
+      ...state,
+      mainMenu: value,
+    };
+  })
   .on(setError, (state, value) => {
     return {
       ...state,

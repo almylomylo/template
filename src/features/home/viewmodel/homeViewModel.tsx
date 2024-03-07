@@ -9,7 +9,7 @@ export const HomeViewModel = () => {
   const [homeData, setHomeData] = useState<HomePageType>();
   const [isLoading, setIsLoading] = useState<boolean>(false);
   useEffect(() => {
-    // getHome();
+    getHome();
   }, []);
 
   const getHome = useCallback(async () => {

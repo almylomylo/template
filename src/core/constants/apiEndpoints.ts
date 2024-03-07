@@ -1,3 +1,4 @@
 export const API_ENDPOINTS = {
-  HOME: '/homepage?_format=json',
+  HOME: '/homepage',
+  MENU: '/menu/main',
 };
