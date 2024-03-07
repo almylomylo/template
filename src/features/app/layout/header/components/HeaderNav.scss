@@ -4,10 +4,35 @@
   justify-content: center;
   gap: 1.125rem;
   .navItem {
-    cursor: pointer;
-    transition: color 0.3s $cubic-out;
+    &-title {
+      cursor: pointer;
+      transition: color 0.3s $cubic-out;
+    }
     &:hover {
       color: $purple;
     }
+    // .submenu {
+    //   position: absolute;
+    //   display: flex;
+    //   background-color: grey;
+    //   position: fixed;
+    //   padding: 2rem;
+    //   z-index: 4;
+    //   transform: translateY(-100vh);
+    //   left: 0;
+    //   transition: transform 0.4s $cubic-out;
+    //   width: 100vw;
+    //   &.isOpen {
+    //     transform: translateY(2.2rem);
+    //   }
+    //   &-inner {
+    //     width: 100%;
+    //     display: grid;
+    //     grid-template-columns: auto 1fr;
+    //     margin: 0 auto;
+    //     padding: 1rem;
+    //     max-width: $max-content-width;
+    //   }
+    // }
   }
 }

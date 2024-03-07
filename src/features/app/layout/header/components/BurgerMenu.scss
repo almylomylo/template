@@ -4,31 +4,11 @@
   justify-content: space-between;
   width: 2rem;
   height: 0.7188rem;
-  z-index: 11;
+  z-index: 3;
   position: relative;
   cursor: pointer;
   transition: transform 0.6s $cubic-out;
-  &.navIsOpen {
-    transform: translateX(25rem);
 
-    &:hover {
-      transform: translateX(25rem) scale(0.9);
-    }
-    &::before {
-      transform: rotate(45deg) translateX(0.4rem);
-    }
-    &::after {
-      transform: rotate(-45deg) translateX(0.4rem);
-    }
-    &:hover {
-      &::before {
-        transform: rotate(45deg) translateX(0.4rem);
-      }
-      &::after {
-        transform: rotate(-45deg) translateX(0.4rem);
-      }
-    }
-  }
   &::before,
   &::after {
     content: '';

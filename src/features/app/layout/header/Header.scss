@@ -1,4 +1,6 @@
 .header {
+  position: relative;
+  z-index: 3;
   background-color: $white;
   &-inner {
     padding: 1.15rem 0;
@@ -19,5 +21,48 @@
   &-center {
     display: flex;
     justify-content: center;
+  }
+}
+.submenu {
+  display: flex;
+  background-color: grey;
+  position: fixed;
+  padding: 2rem;
+  z-index: 2;
+  // transform: translateY(-100%);
+  left: 0;
+  width: 100vw;
+  &.isOpen {
+    animation: show-submenu 0.4s $cubic-out forwards;
+    // transform: translateY(7.2rem);
+  }
+  &.isHidden {
+    animation: hide-submenu 0.4s $cubic-out forwards;
+  }
+  &-inner {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    margin: 0 auto;
+    padding: 1rem;
+    max-width: $max-content-width;
+  }
+}
+
+@keyframes show-submenu {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(7.2rem);
+  }
+}
+
+@keyframes hide-submenu {
+  0% {
+    transform: translateY(7.2rem);
+  }
+  100% {
+    transform: translateY(-100%);
   }
 }
