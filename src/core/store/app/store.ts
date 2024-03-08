@@ -1,12 +1,21 @@
-import {AppState} from './types';
-import {AppDomain} from './domain';
+import { AppState } from "./types";
+import { AppDomain } from "./domain";
 
-import {initializeApp, setActiveNav, setError, setMainMenu} from './events';
+import {
+  initializeApp,
+  setActiveNav,
+  setError,
+  setMainMenu,
+  setFooterAbout,
+  setFooterHelp,
+} from "./events";
 
 const initialState: AppState = {
   mainMenu: null,
   error: null,
   activeNav: null,
+  footerAbout: null,
+  footerHelp: null,
 };
 
 export const $appStore = AppDomain.store<AppState>(initialState)
@@ -32,6 +41,18 @@ export const $appStore = AppDomain.store<AppState>(initialState)
     return {
       ...state,
       nav: value,
+    };
+  })
+  .on(setFooterAbout, (state, value) => {
+    return {
+      ...state,
+      footerAbout: value,
+    };
+  })
+  .on(setFooterHelp, (state, value) => {
+    return {
+      ...state,
+      footerHelp: value,
     };
   });
 

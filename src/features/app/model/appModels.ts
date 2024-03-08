@@ -12,3 +12,13 @@ export type MainMenuItemType = {
   menuItemChildren?: string[];
   submenu: MainMenuItemType[];
 };
+
+export type FooterItemType = {
+  title: string;
+  entity_type?: string;
+  entity_id: number;
+  cleanUrl: string;
+  external: boolean;
+  relative: string;
+  menuImage: string;
+};

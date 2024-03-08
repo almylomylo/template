@@ -1,10 +1,10 @@
 // import {useEffect, useState} from 'react';
-import {lazy, useCallback, useEffect, useState} from 'react';
-import {HomePageType, SectionType} from '../models/homeModel';
-import HomeService from '../service/homeService';
-import mockData from '@/core/mockData/home.json';
+import { lazy, useCallback, useEffect, useState } from "react";
+import { HomePageType, SectionType } from "../models/homeModel";
+import HomeService from "../service/homeService";
+
 // import {BannerText, HeroBanner, ContentGrid, PriceTab} from '@/core/components';
-import {modules} from '@/core/constants/modules';
+import { modules } from "@/core/constants/modules";
 export const HomeViewModel = () => {
   const [homeData, setHomeData] = useState<HomePageType>();
   const [isLoading, setIsLoading] = useState<boolean>(false);
@@ -33,7 +33,6 @@ export const HomeViewModel = () => {
     getHome,
     homeData,
     isLoading,
-    mockData,
     getModule,
   };
 };

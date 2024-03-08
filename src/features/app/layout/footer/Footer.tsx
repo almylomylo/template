@@ -1,9 +1,18 @@
-import './Footer.scss';
+import $appStore from "@/core/store/app/store";
+
+import { useUnit } from "effector-react";
+
+import "./Footer.scss";
+import { FooterAbout } from "./components/FooterAbout";
+import { FooterHelp } from "./components/FooterHelp";
 
 export const Footer = () => {
+  const appStore = useUnit($appStore);
+
   return (
-    <footer className="footer">
-      <div className="footer-inner container">Footer</div>
-    </footer>
+    <>
+      <FooterAbout />
+      <FooterHelp />
+    </>
   );
 };
