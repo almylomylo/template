@@ -17,26 +17,26 @@ $width-l2: 1440;
 $width-xl: 1600;
 $width-xxl: 1920;
 
-$xs: 'only screen and (min-width: 321px)';
-$s: 'only screen and (min-width: 569px)';
-$m: 'only screen and (min-width: 768px)';
-$l: 'only screen and (min-width: 1180px)';
-$l2: 'only screen and (min-width: 1440px)';
-$xl: 'only screen and (min-width: 1280px)';
-$xxl: 'only screen and (min-width: 1600px)';
-$canvas: 'only screen and (min-width: 768px) and (min-height: 600px)';
-$print: 'print';
-$max-xxs: 'only screen and (max-width: #{$width-xxs }px)';
-$max-xs: 'only screen and (max-width: #{$width-xs - 1}px)';
-$max-s: 'only screen and (max-width: #{$width-s}px)';
-$max-m: 'only screen and (max-width: #{$width-m}px)';
-$max-m2: 'only screen and (max-width: #{$width-m2}px)';
-$max-l2: 'only screen and (max-width: #{$width-l2 }px)';
-$max-l: 'only screen and (max-width: #{$width-l - 1}px)';
-$max-xl: 'only screen and (max-width: #{$width-xl - 1}px)';
-$max-xxl: 'only screen and (max-width: #{$width-xxl - 1}px)';
-$h-xs: 'only screen and (min-height: 640px)';
-$h-s: 'only screen and (max-height: 970px) and  (max-width 1024px)';
+$xs: "only screen and (min-width: 321px)";
+$s: "only screen and (min-width: 569px)";
+$m: "only screen and (min-width: 768px)";
+$l: "only screen and (min-width: 1180px)";
+$l2: "only screen and (min-width: 1440px)";
+$xl: "only screen and (min-width: 1280px)";
+$xxl: "only screen and (min-width: 1600px)";
+$canvas: "only screen and (min-width: 768px) and (min-height: 600px)";
+$print: "print";
+$max-xxs: "only screen and (max-width: #{$width-xxs }px)";
+$max-xs: "only screen and (max-width: #{$width-xs - 1}px)";
+$max-s: "only screen and (max-width: #{$width-s}px)";
+$max-m: "only screen and (max-width: #{$width-m}px)";
+$max-m2: "only screen and (max-width: #{$width-m2}px)";
+$max-l2: "only screen and (max-width: #{$width-l2 }px)";
+$max-l: "only screen and (max-width: #{$width-l - 1}px)";
+$max-xl: "only screen and (max-width: #{$width-xl - 1}px)";
+$max-xxl: "only screen and (max-width: #{$width-xxl - 1}px)";
+$h-xs: "only screen and (min-height: 640px)";
+$h-s: "only screen and (max-height: 970px) and  (max-width 1024px)";
 
 // colors
 $black: #242732;
@@ -54,7 +54,7 @@ $root-font-size: 16px;
 $base-background-gray: #fcfcfc;
 
 // font
-$default-font: 'Century-Gothic', sans-serif;
+$default-font: "Century-Gothic", sans-serif;
 
 // font-weight
 $font-regular: 400;

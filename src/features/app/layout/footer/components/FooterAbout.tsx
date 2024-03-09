@@ -9,9 +9,14 @@ export const FooterAbout = () => {
 
   return (
     <>
-      <div>
+      <div className="footer-about">
+        <h3>Μάθε για την AMM</h3>
         {appStore.footerAbout?.map((item, index) => {
-          return <div key={index}>{item.title}</div>;
+          return (
+            <div className="footer-element" key={index}>
+              {item.title}
+            </div>
+          );
         })}
       </div>
     </>

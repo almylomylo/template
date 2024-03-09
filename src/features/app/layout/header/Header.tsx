@@ -1,23 +1,25 @@
-import {useEffect, useRef, useState} from 'react';
-import $appStore from '@/core/store/app/store';
-import {BurgerMenu} from './components/BurgerMenu';
-import {HeaderIcons} from './components/HeaderIcons';
-import {HeaderNav} from './components/HeaderNav';
-import {Logo} from './components/Logo';
-import {TopNav} from './components/TopNav';
-import {useUnit} from 'effector-react';
+import { useEffect, useRef, useState } from "react";
+import $appStore from "@/core/store/app/store";
+import { BurgerMenu } from "./components/BurgerMenu";
+import { HeaderIcons } from "./components/HeaderIcons";
+import { HeaderNav } from "./components/HeaderNav";
+import { Logo } from "./components/Logo";
+import { TopNav } from "./components/TopNav";
+import { useUnit } from "effector-react";
 
-import Image from '@/core/components/image/Image';
+import Image from "@/core/components/image/Image";
 
-import {MainMenuItemType} from '../../model/appModels';
+import { MainMenuItemType } from "../../model/appModels";
 
-import './Header.scss';
-import useOnClickOutside from '@/core/hooks/useOnClickOutside';
-import {setActiveNav} from '@/core/store/app/events';
+import "./Header.scss";
+import useOnClickOutside from "@/core/hooks/useOnClickOutside";
+import { setActiveNav } from "@/core/store/app/events";
 
 export const Header = () => {
   const appStore = useUnit($appStore);
-  const [activeNavItem, setActiveNavItem] = useState<MainMenuItemType | null>(null);
+  const [activeNavItem, setActiveNavItem] = useState<MainMenuItemType | null>(
+    null
+  );
   const menuRef = useRef<HTMLDivElement>(null);
 
   const handleClickOutside = () => {
@@ -28,7 +30,9 @@ export const Header = () => {
 
   useEffect(() => {
     if (appStore.mainMenu && appStore.activeNav) {
-      const menuItem = appStore.mainMenu.filter((e: MainMenuItemType) => e.entity_id === appStore.activeNav);
+      const menuItem = appStore.mainMenu.filter(
+        (e: MainMenuItemType) => e.entity_id === appStore.activeNav
+      );
       if (menuItem && menuItem.length > 0) {
         setActiveNavItem(menuItem[0]);
       }
@@ -56,10 +60,16 @@ export const Header = () => {
           </div>
         </div>
       </header>
-      <div className={`submenu ${activeNavItem ? 'isOpen' : 'isHidden'}`} ref={menuRef}>
+      <div
+        className={`submenu ${activeNavItem ? "isOpen" : "isHidden"}`}
+        ref={menuRef}
+      >
         <div className="submenu-inner">
           <div className="submenu-items">
-            {activeNavItem && activeNavItem.submenu.map((item: MainMenuItemType) => <div>{item.title}</div>)}
+            {activeNavItem &&
+              activeNavItem.submenu.map((item: MainMenuItemType) => (
+                <div>{item.title}</div>
+              ))}
             {activeNavItem && activeNavItem.menuImage && (
               <div className="submenu-image">
                 <Image src={activeNavItem.menuImage} />

@@ -1,3 +1,23 @@
-footer {
-  padding: 1rem;
+.footer {
+  display: flex;
+
+  width: 100%;
+  overflow-x: scroll;
+
+  position: relative;
+  border-top: 2px solid $purple;
+  margin-top: 20px;
+
+  .footerAbout {
+    width: 50%;
+    background-color: $purple;
+    color: $white;
+    padding: 20px;
+  }
+
+  .footerHelp {
+    width: 50%;
+    background-color: $white;
+    color: $black;
+  }
 }

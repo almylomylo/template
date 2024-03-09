@@ -1,0 +1,19 @@
+.footer-help {
+  padding: 20px;
+
+  .footer-element {
+    padding: 10px 0px;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+      text-decoration-color: black;
+    }
+  }
+
+  h3 {
+    margin-bottom: 20px;
+    text-decoration: underline;
+    color: $purple;
+  }
+}

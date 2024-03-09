@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useState } from "react";
 import { $navIsOpen, setNavIsOpen } from "../store/appStore";
 import { useUnit } from "effector-react";
-import { MainMenuItemType, FooterItemType } from "../model/appModels";
+
 import AppService from "../service/appService";
 import {
   setFooterAbout,
@@ -11,7 +11,7 @@ import {
 
 export const AppViewModel = () => {
   const navIsOpen = useUnit($navIsOpen);
-  const [menuData, setMenuData] = useState<MainMenuItemType[]>();
+
   const [isLoading, setIsLoading] = useState<boolean>(false);
   useEffect(() => {
     getMainMenu();
@@ -59,7 +59,6 @@ export const AppViewModel = () => {
     handleNav,
     navIsOpen,
     setNavIsOpen,
-    menuData,
     isLoading,
   };
 };
